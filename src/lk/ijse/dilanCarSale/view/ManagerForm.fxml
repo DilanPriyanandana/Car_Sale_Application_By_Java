@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneManager" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.ManagerFormController">
+   <children>
+      <AnchorPane fx:id="paneMangerTasks" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #3deef1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="391.0" layoutY="-3.0" prefHeight="45.0" prefWidth="148.0" text="MANAGER" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="391.0">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnDashboard" buttonType="RAISED" layoutX="105.0" layoutY="63.0" onAction="#btnDashboardOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #C0C6C7; /*-fx-background-repeat: 50;*/" text="DashBoard" textFill="#c0c6c7" AnchorPane.leftAnchor="105.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/icons8-dashboard-layout-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnVehicle" buttonType="RAISED" layoutX="568.0" layoutY="63.0" onAction="#btnVehicleOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 10;" textFill="#c0c6c7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/icons8-people-in-car-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSupplier" buttonType="RAISED" layoutX="261.0" layoutY="63.0" onAction="#btnSupplierOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 10;" textFill="#c0c6c7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="52.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/icons8-supplier-64.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnStock" buttonType="RAISED" layoutX="416.0" layoutY="63.0" onAction="#btnStockOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 10;" textFill="#c0c6c7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/icons8-open-box-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" buttonType="RAISED" layoutX="718.0" layoutY="63.0" onAction="#btnPaymentOnAction" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 10;" textFill="#c0c6c7" AnchorPane.rightAnchor="106.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/icons8-dollar-coin-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text layoutX="284.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier" wrappingWidth="56.249998323619366">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text layoutX="445.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock" wrappingWidth="44.24999937415123">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text layoutX="593.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle" wrappingWidth="44.24999937415123">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text layoutX="758.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment" wrappingWidth="56.249998323619366">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text layoutX="116.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="69.74999844096601">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneDashboard" layoutX="7.0" layoutY="187.0" prefHeight="500.0" prefWidth="936.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="148.0" layoutY="34.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="-26.0" />
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="44.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.leftAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="282.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.leftAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="283.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.rightAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="46.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.rightAnchor="98.0" />
+            <Text fx:id="txtLiveClock" layoutX="126.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.44.55" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="77.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtDate" layoutX="520.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2022/12/22" wrappingWidth="322.41668494418263">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text fx:id="tctEmployeeCount" layoutX="225.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23" wrappingWidth="90.41666968539357">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="107.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Employees:" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text layoutX="514.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Vehicles:" wrappingWidth="262.49999133870006">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtVehicleCount" layoutX="580.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234" wrappingWidth="168.00000295042992">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

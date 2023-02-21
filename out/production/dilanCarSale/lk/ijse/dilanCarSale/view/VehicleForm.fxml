@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="508.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.VehicleFormController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="1.0" prefHeight="508.0" prefWidth="930.0" style="-fx-background-color: #c0c6c7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="611.0" layoutY="40.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+            <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="93.0" layoutY="231.0" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Add">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="499.0" layoutY="231.0" onAction="#btnSearchOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Search">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="300.0" layoutY="231.0" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Update">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="710.0" layoutY="231.0" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Delete" AnchorPane.rightAnchor="92.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnViewVehReport" buttonType="RAISED" layoutX="760.0" layoutY="101.0" onAction="#btnViewVehReportOnAction" prefHeight="28.0" prefWidth="131.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="View Report">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="20.0" prefHeight="196.0" prefWidth="688.0" style="-fx-background-color: #3DEEE8; -fx-background-radius: 20;" text=" " />
+            <JFXTextField fx:id="txtVehId" focusColor="#3deef1" layoutX="167.0" layoutY="24.0" onAction="#txtVehIdOnAction" onKeyReleased="#txtVehIdOnKeyReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : V123" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtVehPrice" focusColor="#3deef1" layoutX="165.0" layoutY="72.0" onAction="#txtVehPriceOnAction" onKeyReleased="#txtVehPriceOnKetReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : 100000.00" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtVehDescription" focusColor="#3deef1" layoutX="164.0" layoutY="119.0" onAction="#txtVehDescriptionOnAction" onKeyReleased="#txtVehDescriptionOnKetReleased" prefHeight="24.0" prefWidth="190.0" promptText="Vehicle model : gtr" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtVehBrand" focusColor="#3deef1" layoutX="164.0" layoutY="162.0" onAction="#txtVehBrandOnAction" onKeyReleased="#txtVehBrandOnKetReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : Nissan" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtVehFuel" focusColor="#3deef1" layoutX="508.0" layoutY="40.0" onAction="#txtVehFuelOnAction" onKeyReleased="#txtVehFuelOnKetReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : petrol" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtStockId" focusColor="#3deef1" layoutX="508.0" layoutY="90.0" onAction="#txtStockIdOnAction" onKeyReleased="#txtVehStockIdOnKetReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : S123" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <Label fx:id="lblId" layoutX="167.0" layoutY="55.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrice" layoutX="164.0" layoutY="103.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDesc" layoutX="162.0" layoutY="152.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBrand" layoutX="162.0" layoutY="192.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFuel" layoutX="508.0" layoutY="71.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStockId" layoutX="508.0" layoutY="122.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtVehQty" focusColor="#3deef1" layoutX="504.0" layoutY="133.0" onKeyReleased="#txtVehQtyOnKeyReleased" prefHeight="31.0" prefWidth="190.0" promptText="Ex : 10" unFocusColor="BLACK">
+               <font>
+                  <Font name="Calibri Light Italic" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <Label fx:id="lblQty" layoutX="508.0" layoutY="165.0" prefHeight="17.0" prefWidth="190.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Text layoutX="44.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Id">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price (Rs)">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="44.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="50.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="404.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="401.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Id">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="409.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblVehicle" layoutX="16.0" layoutY="301.0" prefHeight="200.0" prefWidth="901.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="colVehId" prefWidth="89.66666412353516" text="Vehicle Id" />
+            <TableColumn fx:id="colPrice" prefWidth="168.0" text="Price (Rs)" />
+            <TableColumn fx:id="colDescription" prefWidth="151.0" text="Description" />
+            <TableColumn fx:id="colBrand" prefWidth="166.33334350585938" text="Brand" />
+            <TableColumn fx:id="colFuel" prefWidth="124.0" text="Fuel Type" />
+            <TableColumn fx:id="colStockId" prefWidth="124.0" text="Stock Id" />
+            <TableColumn fx:id="colQty" prefWidth="81.0" text="Qty" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

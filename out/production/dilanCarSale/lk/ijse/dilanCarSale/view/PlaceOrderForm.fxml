@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePlaceOrder" prefHeight="508.0" prefWidth="930.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.PlaceOrderFormController">
+   <children>
+      <Polygon fill="#c0c6c7" layoutX="789.0" layoutY="35.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+      <TableView fx:id="tblOrder" layoutX="36.0" layoutY="247.0" prefHeight="219.0" prefWidth="759.0">
+         <columns>
+            <TableColumn fx:id="clmVehicleId" prefWidth="116.33332824707031" text="Vehcle Id" />
+            <TableColumn fx:id="clmBrand" prefWidth="125.66665649414062" text="Brand" />
+            <TableColumn fx:id="clmDescription" prefWidth="131.33334350585938" text="Desciption" />
+            <TableColumn fx:id="clmQty" prefWidth="69.33334350585938" text="Qty" />
+            <TableColumn fx:id="clmPrice" prefWidth="113.0" text="Unit Price (Rs)" />
+            <TableColumn fx:id="clmTotal" prefWidth="115.33331298828125" text="Total (Rs)" />
+            <TableColumn fx:id="clmAction" prefWidth="89.0" text="Action" />
+         </columns>
+      </TableView>
+      <Label layoutX="72.0" layoutY="112.0" prefHeight="35.0" prefWidth="113.0" text="Order ID : ">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="153.0" prefHeight="35.0" prefWidth="150.0" text="Customer ID :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="199.0" prefHeight="35.0" prefWidth="185.0" text="Customer Name :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCusId" layoutX="200.0" layoutY="159.0" onAction="#cmbCusIdOnAction" prefHeight="25.0" prefWidth="128.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <Label layoutX="485.0" layoutY="25.0" prefHeight="35.0" prefWidth="120.0" text="Vehicle ID :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehId" layoutX="607.0" layoutY="26.0" onAction="#cmbVehIdOnAction" prefHeight="25.0" prefWidth="88.0" />
+      <Label layoutX="484.0" layoutY="95.0" prefHeight="35.0" prefWidth="124.0" text="Description :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="60.0" prefHeight="35.0" prefWidth="83.0" text="Brand :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="130.0" prefHeight="35.0" prefWidth="96.0" text="Stock Id :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="207.0" prefHeight="35.0" prefWidth="54.0" text="Qty :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtyVehicle" layoutX="733.0" layoutY="213.0" prefHeight="25.0" prefWidth="54.0" promptText="Enter Qty" text=" ">
+         <font>
+            <Font name="System Italic" size="8.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="484.0" layoutY="164.0" prefHeight="35.0" prefWidth="150.0" text="Unit Price(Rs) :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="805.0" layoutY="319.0" onAction="#btnPlaceOrderOnAction" prefHeight="47.0" prefWidth="111.0" style="-fx-background-color: #1fffe9; -fx-background-radius: 20;" text="Place Order">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="74.0" layoutY="73.0" prefHeight="35.0" prefWidth="66.0" text="Time :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="31.0" prefHeight="35.0" prefWidth="66.0" text="Date :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="148.0" layoutY="36.0" prefHeight="26.0" prefWidth="191.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lblTime" layoutX="152.0" layoutY="77.0" prefHeight="26.0" prefWidth="191.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="182.0" layoutY="116.0" prefHeight="26.0" prefWidth="96.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerName" layoutX="260.0" layoutY="205.0" prefHeight="26.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehBrand" layoutX="576.0" layoutY="66.0" prefHeight="26.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehDescription" layoutX="620.0" layoutY="97.0" prefHeight="26.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehStockId" layoutX="585.0" layoutY="135.0" prefHeight="26.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVehUnitPrice" layoutX="630.0" layoutY="169.0" prefHeight="26.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="207.0" prefHeight="35.0" prefWidth="140.0" text="Qty On Hand :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQtyOnHand" layoutX="618.0" layoutY="212.0" prefHeight="26.0" prefWidth="66.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFuel" layoutX="487.0" layoutY="52.0" prefHeight="17.0" prefWidth="88.0">
+         <font>
+            <Font name="System Italic" size="9.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="txtHistory" buttonType="RAISED" layoutX="825.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#txtHistoryOnAction" opacity="0.85" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: black; -fx-background-radius: 7;" text="History" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnPrintBill" buttonType="RAISED" layoutX="814.0" layoutY="439.0" onAction="#btnPrintBillOnAction" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #1fffe9; -fx-background-radius: 20;" text="Print Bill">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="835.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../assets/logo/rightward arrow  icon_4271123.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="txtAddCart" buttonType="RAISED" layoutX="794.0" layoutY="175.0" onAction="#txtAddCartOnAction" prefHeight="50.0" prefWidth="132.0" style="-fx-background-color: #1fffe9; -fx-background-radius: 20;" text="Add To Cart">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="832.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../assets/logo/rightward arrow  icon_4271123.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

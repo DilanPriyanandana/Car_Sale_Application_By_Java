@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="508.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.DashBoardFormController">
+   <children>
+      <AnchorPane fx:id="paneDashboard" layoutX="7.0" prefHeight="504.0" prefWidth="930.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="143.0" layoutY="38.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="-22.0" />
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="44.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.leftAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="282.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.leftAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="283.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.rightAnchor="98.0" />
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="46.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" AnchorPane.rightAnchor="98.0" />
+            <Text fx:id="txtLiveClock" layoutX="127.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.44.55" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="77.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtDate" layoutX="504.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2022/12/22" wrappingWidth="322.41668494418263">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text fx:id="tctEmployeeCount" layoutX="225.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23" wrappingWidth="90.41666968539357">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="107.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Employees:" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text layoutX="514.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Vehicles:" wrappingWidth="262.49999133870006">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtVehicleCount" layoutX="576.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234" wrappingWidth="133.41666968539357">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

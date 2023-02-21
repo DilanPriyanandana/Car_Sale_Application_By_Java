@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneSignUp" prefHeight="700.0" prefWidth="930.0" style="-fx-background-color: #C0C6C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.SignUpFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="372.0" layoutX="-3.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="957.0" />
+      <AnchorPane layoutX="252.0" layoutY="26.0" opacity="0.47" prefHeight="648.0" prefWidth="442.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="252.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="26.0" />
+      <Circle fill="WHITE" layoutX="482.0" layoutY="123.0" radius="56.0" stroke="#0085ff" strokeType="INSIDE" strokeWidth="3.0" AnchorPane.leftAnchor="426.0" AnchorPane.rightAnchor="416.0" />
+      <ImageView fitHeight="72.0" fitWidth="74.0" layoutX="449.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/icons8-sign-up-64.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="390.0" layoutY="582.0" onAction="#btnSignUpOnAction" prefHeight="54.0" prefWidth="174.0" style="-fx-background-color: #3deef1; -fx-background-radius: 10;" text="Create Account">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="288.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="286.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="285.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnClose" buttonType="RAISED" ellipsisString=" " layoutX="864.0" layoutY="22.0" onMouseClicked="#btnCloseOnAction" prefHeight="61.0" prefWidth="76.0" textFill="#c0c6c7">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/wrong-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="290.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role">
+         <font>
+            <Font name="Alef Regular" size="27.0" />
+         </font>
+      </Text>
+      <JFXCheckBox fx:id="checkManager" checkedColor="#3deef1" layoutX="525.0" layoutY="530.0" onAction="#checkManagerOnAction" text="Manager" unCheckedColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="checkEmployee" checkedColor="#3deef1" layoutX="412.0" layoutY="529.0" onAction="#checkEmployeeOnAction" selected="true" text="Employee" unCheckedColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" ellipsisString=" " layoutX="28.0" layoutY="22.0" onMouseClicked="#btnBackOnAction" prefHeight="61.0" prefWidth="76.0">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../assets/logo/rightward arrow  icon_4271123.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtId" focusColor="#3deef1" layoutX="394.0" layoutY="219.0" onAction="#txtIdOnAction" onKeyReleased="#txtIdKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Id" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" focusColor="#3deef1" layoutX="394.0" layoutY="269.0" onAction="#txtNameOnAction" onKeyReleased="#txtNameKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Name" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="#3deef1" layoutX="394.0" layoutY="319.0" onAction="#txtAddressOnAction" onKeyReleased="#txtAddressKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Address" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" focusColor="#3deef1" layoutX="394.0" layoutY="366.0" onAction="#txtContactOnAction" onKeyReleased="#txtContactKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Contact Number" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="#3deef1" layoutX="394.0" layoutY="412.0" onAction="#txtEmailOnAction" onKeyReleased="#txtEmailKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Email" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNic" focusColor="#3deef1" layoutX="394.0" layoutY="459.0" onAction="#txtNicOnAction" onKeyReleased="#txtNicKeyTypedOnAction" prefHeight="40.0" prefWidth="243.0" promptText="Enter Your Nic Number" style="-fx-border-radius: 7;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

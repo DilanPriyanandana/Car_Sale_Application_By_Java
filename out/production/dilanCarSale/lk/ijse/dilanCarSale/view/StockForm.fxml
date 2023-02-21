@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneStock" prefHeight="508.0" prefWidth="930.0" style="-fx-background-radius: 30; -fx-background-color: #c0c6c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.StockFormController">
+   <children>
+      <Polygon fill="#c0c6c7" layoutX="456.0" layoutY="40.0" points="-73.0, -16.0, 70.0, -16.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+      <JFXButton buttonType="RAISED" layoutX="61.0" layoutY="14.0" prefHeight="255.0" prefWidth="341.0" style="-fx-background-color: #3DEEE8; -fx-background-radius: 20;" text=" " />
+      <Text layoutX="78.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Id">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="74.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="74.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Id">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cmbSupId" focusColor="#61d5f2" layoutX="213.0" layoutY="233.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXDatePicker fx:id="dateStock" defaultColor="WHITE" layoutX="212.0" layoutY="203.0" prefHeight="25.0" prefWidth="158.0" />
+      <JFXButton fx:id="btnviewReport" buttonType="RAISED" layoutX="793.0" layoutY="136.0" onAction="#btnviewReportOnAction" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="View Report">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtStockId" focusColor="#3deee8" layoutX="211.0" layoutY="26.0" onAction="#txtStockIdOnAction" onKeyReleased="#txtStockIdOnKeyReleased" prefHeight="19.0" prefWidth="180.0" promptText="Ex : S123" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStockQty" focusColor="#3deee8" layoutX="211.0" layoutY="71.0" onAction="#txtStockQtyOnAction" onKeyReleased="#txtStockQtyOnKeyReleased" prefHeight="19.0" prefWidth="180.0" promptText="Ex :  5" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStockDescription" focusColor="#3deee8" layoutX="213.0" layoutY="155.0" onAction="#txtStockDescriptionOnAction" prefHeight="19.0" prefWidth="180.0" promptText="Ex :  Brand new / Used" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblStockId" layoutX="210.0" layoutY="60.0" prefHeight="17.0" prefWidth="180.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQty" layoutX="209.0" layoutY="104.0" prefHeight="17.0" prefWidth="180.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDesc" layoutX="211.0" layoutY="185.0" prefHeight="17.0" prefWidth="180.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStock" layoutX="14.0" layoutY="297.0" prefHeight="200.0" prefWidth="901.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="colStockId" prefWidth="126.33332824707031" text="Stock Id" />
+            <TableColumn fx:id="colQty" prefWidth="103.66667175292969" text="Qty" />
+            <TableColumn fx:id="colVehPrice" prefWidth="166.33331298828125" text="Price (Rs)" />
+            <TableColumn fx:id="colVehDesc" prefWidth="179.33331298828125" text="Description" />
+            <TableColumn fx:id="colDate" prefWidth="178.6666259765625" text="Date" />
+            <TableColumn fx:id="colSupId" prefWidth="148.3333740234375" text="Supplier Id" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="470.0" layoutY="85.0" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="640.0" layoutY="85.0" onAction="#btnSearchOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="470.0" layoutY="166.0" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="640.0" layoutY="164.0" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="71.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price (Rs)">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtStockPrice" focusColor="#3deee8" layoutX="212.0" layoutY="115.0" onAction="#txtStockPriceOnAction" onKeyReleased="#txtStockPriceOnKeyReleased" prefHeight="19.0" prefWidth="180.0" promptText="Ex :  2 000 000.00" unFocusColor="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="lblPrice" layoutX="210.0" layoutY="145.0" prefHeight="17.0" prefWidth="180.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneCustomer" prefHeight="508.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.CustomerFormController">
+   <children>
+      <AnchorPane layoutX="43.0" layoutY="32.0" prefHeight="508.0" prefWidth="817.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="562.0" layoutY="36.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="299.0" layoutY="28.0" opacity="0.83" prefHeight="341.0" prefWidth="336.0" style="-fx-background-color: white; -fx-background-radius: 20;" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="28.0">
+         <children>
+            <JFXTextField fx:id="txtCusId" focusColor="#64e0f8" layoutX="126.0" layoutY="49.0" onAction="#txtCusIdOnAction" onKeyReleased="#txtIdOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : C001" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCusName" focusColor="#64e0f8" layoutX="126.0" layoutY="94.0" onAction="#txtCusNameOnAction" onKeyReleased="#txtNameOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : kamal" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCusAddress" focusColor="#64e0f8" layoutX="126.0" layoutY="148.0" onAction="#txtCusAddressOnAction" onKeyReleased="#txtAddressOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : colombo" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCusContact" focusColor="#64e0f8" layoutX="126.0" layoutY="193.0" onAction="#txtCusContactOnAction" onKeyReleased="#txtContactOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : 07x xxx xxxx" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCusEmail" focusColor="#64e0f8" layoutX="126.0" layoutY="240.0" onAction="#txtCusEmailOnAction" onKeyReleased="#txtEmailOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : kamal@gmail.com" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCusNic" focusColor="#64e0f8" layoutX="126.0" layoutY="284.0" onAction="#txtCusNicOnAction" onKeyReleased="#txtNicOnKeyReleased" prefHeight="25.0" prefWidth="191.0" promptText="Ex : 200012345566" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <Label fx:id="lblId" layoutX="138.0" layoutY="78.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblName" layoutX="138.0" layoutY="123.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress" layoutX="138.0" layoutY="177.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblContact" layoutX="138.0" layoutY="222.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEmail" layoutX="138.0" layoutY="269.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNic" layoutX="138.0" layoutY="313.0" prefHeight="17.0" prefWidth="191.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="111.0" layoutY="392.0" onAction="#btnAddOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Add" AnchorPane.leftAnchor="111.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="313.0" layoutY="392.0" onAction="#btnSearchOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="500.0" layoutY="392.0" onAction="#btnUpdateOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="720.0" layoutY="392.0" onAction="#btnDeleteOnAction" prefHeight="46.0" prefWidth="128.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="Delete" AnchorPane.rightAnchor="111.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="331.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="327.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="326.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="323.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="324.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="329.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnViewCusReport" buttonType="RAISED" layoutX="411.0" layoutY="456.0" onAction="#btnViewCusReportOnAction" prefHeight="28.0" prefWidth="131.0" style="-fx-background-color: #808080; -fx-background-radius: 8;" text="View Report">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

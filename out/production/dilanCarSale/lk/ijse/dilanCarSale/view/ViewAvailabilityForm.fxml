@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.ViewAvailabilityFormController">
+   <children>
+      <AnchorPane fx:id="paneViewAvailability" prefHeight="500.0" prefWidth="930.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="348.0" layoutY="37.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+            <Button fx:id="btnGetReport" layoutX="367.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnGetReportOnAction" prefHeight="40.0" prefWidth="197.0" style="-fx-background-color: #3deef1; -fx-background-radius: 8;" text="Click Here To Get Report" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="366.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TableView fx:id="tblAvailableVehicle" layoutX="7.0" layoutY="78.0" prefHeight="368.0" prefWidth="912.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+              <columns>
+                <TableColumn fx:id="clmVehId" prefWidth="130.3333282470703" text="Vehicle ID" />
+                <TableColumn fx:id="clmVehPrice" prefWidth="142.66665649414062" text="Price" />
+                  <TableColumn fx:id="clmVehBrand" prefWidth="159.0" text="Description" />
+                  <TableColumn fx:id="clmVehDescription" prefWidth="146.33331298828125" text="Brand" />
+                  <TableColumn fx:id="clmVehFuelType" minWidth="0.0" prefWidth="134.3333740234375" text="Fuel Type" />
+                  <TableColumn fx:id="clmStockId" prefWidth="100.0" text="Stock Id" />
+                  <TableColumn fx:id="clmQty" prefWidth="100.0" text="Qty" />
+              </columns>
+            </TableView>
+            <Label layoutX="306.0" layoutY="6.0" prefHeight="38.0" prefWidth="319.0" text="Available Vehicles" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="305.0">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

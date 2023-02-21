@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneAfterLogin" prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.AfterLoginFormController">
+   <children>
+      <AnchorPane fx:id="paneTask" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #C0C6C7;">
+         <children>
+            <AnchorPane prefHeight="364.0" prefWidth="1000.0" style="-fx-background-color: #45a0e7;" />
+            <JFXButton fx:id="btnClose" buttonType="RAISED" layoutX="898.0" layoutY="12.0" onMouseClicked="#btnCloseOnAction" prefHeight="61.0" prefWidth="76.0" text=" " textFill="#c0c6c7">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/wrong-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="26.0" opacity="0.48" prefHeight="648.0" prefWidth="416.0" style="-fx-background-color: white; -fx-background-radius: 20;" text=" " textFill="#c0c6c7" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="288.0" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="26.0" />
+            <ImageView fitHeight="124.0" fitWidth="122.0" layoutX="435.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="435.0" AnchorPane.rightAnchor="440.0">
+               <image>
+                  <Image url="@../assets/logo/icons8-male-user-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="374.0" layoutY="457.0" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #1fffe9; -fx-background-radius: 10;" text="Login" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="374.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="482.0" layoutY="533.0" prefHeight="27.0" prefWidth="31.0" text="OR">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="397.0" layoutY="590.0" onAction="#btnSignUpOnAction" prefHeight="52.0" prefWidth="190.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE" AnchorPane.leftAnchor="374.0" AnchorPane.rightAnchor="374.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Line endX="100.0" layoutX="342.0" layoutY="548.0" startX="27.0" />
+            <Line endX="100.0" layoutX="521.0" layoutY="546.0" startX="27.0" />
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="299.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/icons8-username-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="299.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/icons8-sign-in-form-password-50.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUserName" focusColor="#1fffe9" layoutX="370.0" layoutY="286.0" onAction="#txtUserNameOnAction" onKeyReleased="#txtUserNameKeyTypedOnAction" prefHeight="40.0" prefWidth="300.0" promptText="User Name" style="-fx-border-width: 5;" unFocusColor="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#1fffe9" layoutX="370.0" layoutY="372.0" onAction="#txtPasswordOnAction" onKeyReleased="#txtPasswordKeyTypedOnAction" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-border-width: 5;" unFocusColor="WHITE">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="lblUserNameWarning" layoutX="374.0" layoutY="338.0" prefHeight="17.0" prefWidth="205.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPasswordWarning" layoutX="374.0" layoutY="424.0" prefHeight="17.0" prefWidth="205.0" text=" " textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

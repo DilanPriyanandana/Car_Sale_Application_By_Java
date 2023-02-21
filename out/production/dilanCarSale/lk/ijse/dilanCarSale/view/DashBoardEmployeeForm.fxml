@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dilanCarSale.controller.DashBoardEmployeeFormController">
+   <children>
+      <AnchorPane prefHeight="508.0" prefWidth="930.0" style="-fx-background-color: #C0C6C7; -fx-background-radius: 30;" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#c0c6c7" layoutX="139.0" layoutY="36.0" points="-111.0, 7.0, 119.66665649414062, 7.0, 0.0, -60.0" stroke="#c0c6c7" strokeType="INSIDE" />
+            <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="50.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" />
+            <Text fx:id="txtLiveClock" layoutX="115.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.44.55" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="77.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="286.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="286.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="50.0" opacity="0.84" prefHeight="195.0" prefWidth="350.0" style="-fx-background-color: white; -fx-background-radius: 10;" textFill="WHITE" />
+            <Text fx:id="txtDate" layoutX="516.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2022/12/22" wrappingWidth="322.41668494418263">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtVehicleCount" layoutX="590.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234" wrappingWidth="160.41666968539357">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+            <Text layoutX="98.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Customers:" wrappingWidth="295.7499979324639">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text layoutX="507.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Of Vehicles:" wrappingWidth="262.49999133870006">
+               <font>
+                  <Font name="Corbel Bold Italic" size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtCustomerCount" layoutX="209.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23" wrappingWidth="90.41666968539357">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
